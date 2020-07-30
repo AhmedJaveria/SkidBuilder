@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UFT-*">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Skid Builder</title>
+    <link rel="stylesheet" href="style.css"/>
+
+</head>
+<body>
+    <div class="app">
+        <header>
+            <h1>Skid Builder</h1>
+        </header>
+        <h3 class="operational">Unit Operations</h3>
+        <h3 class="equipment">Equipments</h3>
+        <div class="lists">
+
+            <div class="list">
+                <button class="createU" onclick="clickEventU();">+ Create Unit</button>
+            </div>
+
+            <div class="list2"></div>
+
+            <div class="list3">
+                <button class="createE" onclick="clickEventE();">+ Create Equipment</button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="bg-modalU"> 
+        <div class="modal-contentU">
+
+        <div class="close" onclick="closeEvent();">+</div>
+        <form action="" method="GET">
+            <input type="text" id="UnitOp" placeholder="               Name">
+            
+            <div class="checkboxes">
+            
+                <label for = "UnitOps">
+                    <input type = "checkbox" id = "UnitOps" value = "Unit Operation" >Unit Operation
+                </label>
+
+                <label for = "OpMode" >
+                    <input type = "checkbox" id = "OpMode" value = "Operational Mode" >Unit Operation Type
+                </label>
+                     
+
+            </div>
+            
+            <input type="button" id="ButtonUSave" value="save" onclick= "saveInfoU()"> </input>
+                
+        </form>
+        </div>
+    </div>
+
+    <div class="bg-modalE"> 
+        <div class="modal-contentE">
+
+        <div class="close" onclick="closeEvent();">+</div>
+        <form action="" method="GET">
+            <input type="text" id="Equip" placeholder="Name">
+           
+            <div class="checkboxes">
+            
+                <label for = "Equipment">
+                    <input type = "checkbox" id = "Equips" value = "Equipment" >Equipment Category
+                </label>
+
+                <label for = "OpMode" >
+                    <input type = "checkbox" id = "EqMode" value = "Operational Mode" >Equipment
+                </label>
+
+            </div>
+            
+            <input type="button" id="SaveUButton" value="save" onclick= "saveInfoE();"></input>
+        </form>
+        </div>
+    </div>
+
+    <div class="bg-modalU-specs"> 
+        <div class="modal-contentU-specs">
+
+        <div class="close" onclick="closeEvent();">+</div>
+        <form action="" method="GET">
+            <input type="text" id="size" placeholder="Size">
+        <br>
+            <input type="text" id="flowStream" placeholder="Flow Stream">
+        <br>    
+            <input type="button" id="SaveUButton" value="save" onclick= "saveInfoUspecs();"></input>
+        </form>
+        </div>
+    </div>
+
+    <div class="bg-modalE-specs"> 
+        <div class="modal-contentE-specs">
+
+        <div class="close" onclick="closeEvent();">+</div>
+        <form action="" method="GET">
+            <input type="text" id="TAG" placeholder="TAG">
+        <br>
+            <input type="text" id="Tank/Skid" placeholder="Tank/Skid">
+        <br>
+            <input type="text" id="Capacity" placeholder="Capacity">
+        <br>
+            <input type="text" id="unitPrice" placeholder="Unit Price">
+        <br>
+            <input type="button" id="SaveUButton" value="save" onclick= "saveInfoEspecs();"></input>
+        </form>
+        </div>
+    </div>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+  

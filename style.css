@@ -1,0 +1,296 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto';
+    background-color:  rgb(60, 114, 243) ;
+    
+}
+
+.app {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-flow: column;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 13px;
+    margin-bottom: -10px;
+    color: white;
+}
+
+h3{
+    color: white;
+}
+
+.operational {
+    justify-content: left;
+    align-items: left;
+    padding-left: 100px;
+    margin-bottom: -20px;
+
+}
+
+.equipment {
+    padding-left: 1250px;
+    padding-bottom: 10px;
+
+}
+
+.lists {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    overflow-y: scroll;
+} 
+
+.lists .list{
+    display: flex;
+    flex-flow: column;
+    flex:1;
+
+    width:100%;
+    min-width: 250px;
+    max-width: 350px;
+    height: 100%;
+    min-height: 150px;
+
+    background-color:  rgb(36, 74, 161);
+    margin: 0 15px ;
+    padding: 8px;
+    transition: all 0.2s linear;
+}
+.lists .list3{
+    display: flex;
+    flex-flow: column;
+    flex:1;
+
+    width:100%;
+    min-width: 250px;
+    max-width: 350px;
+    height: 100%;
+    min-height: 150px;
+
+    background-color:  rgb(26, 67, 161);
+    margin: 0 15px ;
+    padding: 8px;
+    transition: all 0.2s linear;
+}
+
+.lists .list2{
+    display: flex;
+    flex-flow: column;
+    flex:1;
+
+    width:100%;
+    min-width: 800px;
+    max-width: 850px;
+    height: 100%;
+    min-height: 150px;
+
+    background-color:rgba(26, 60, 194, 0.4);
+    margin: 0 15px ;
+    padding: 8px;
+    transition: all 0.2s linear;
+}
+
+.lists .list .createU{
+
+    background-color: greenyellow;
+    border-radius: 8px;
+    padding: 15px 20px;
+    text-align: center;
+    margin: 4px 0px; 
+    border: 1px;
+}
+
+.lists .list3 .createE{
+
+    background-color: greenyellow;
+    border-radius: 8px;
+    padding: 15px 20px;
+    text-align: center;
+    margin: 4px 0px; 
+    border: 1px;
+}
+
+.lists .list .list-item{
+
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px 20px;
+    text-align: center;
+    margin: 4px 0px; 
+
+}
+
+.lists.list3.list-item-sub{
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px 20px;
+    text-align: center;
+    margin: 4px 0px; 
+}
+
+.lists .list2 .list-item{
+
+    background-color: #F3F3F3;
+    border-radius: 8px;
+    padding: 15px 20px;
+    text-align: center;
+    margin: 4px 0px; 
+    min-width: 400px;
+    max-width: 400px;
+    align-self: center;
+}
+
+.lists .list2 .list-item-sub{
+
+    background-color: grey;
+    border-radius: 8px;
+    padding: 15px 20px;
+    text-align: center;
+    align-self: left;
+    margin: 4px 0px; 
+    min-width: 300px;
+    max-width: 300px;
+
+}
+
+.div1 {
+    width: 350px;
+    height: 70px;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+}
+
+.bg-modalU{
+    width:100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.7);
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.bg-modalE{
+    width:100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.7);
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.modal-contentU{
+    width: 500px;
+    height: 300px;
+    background-color: white;
+    opacity: 1;
+    border-radius: 4px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+
+}
+
+.modal-contentE{
+    width: 500px;
+    height: 300px;
+    background-color: white;
+    opacity: 1;
+    border-radius: 4px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.bg-modalU-specs{
+    width:100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.7);
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.bg-modalE-specs{
+    width:100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.7);
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.modal-contentU-specs{
+    width: 500px;
+    height: 300px;
+    background-color: white;
+    opacity: 1;
+    border-radius: 4px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+
+}
+
+.modal-contentE-specs{
+    width: 500px;
+    height: 300px;
+    background-color: white;
+    opacity: 1;
+    border-radius: 4px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+input{
+    display: block;
+    margin: 20px auto;
+    display: inline;
+
+
+}
+
+.close{
+    position: absolute;
+    top:0;
+    right: 14px;
+    font-size: 42px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+
+label{
+    display: inline;
+}
+
+.highlight {
+    border: 5px solid blue;
+}
